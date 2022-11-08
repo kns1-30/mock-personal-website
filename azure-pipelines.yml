@@ -26,24 +26,25 @@ steps:
   clean: true
    
 - script: |
-    echo $(Build.SourceBranch)
-    echo $(Build.SourceBranchName)
-    echo $(Build.SourceVersion)
     echo $(Build.SourceVersionMessage)
     echo $(Build.Repository.Uri)
     echo $(Build.Repository.Name)
-    echo $(Build.QueuedBy)
     echo $(Build.DefinitionName)
+    echo $(Build.ArtifactStagingDirectory)
+
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    rootFolderOrFile: '$(Pipeline.Workspace)/s/'
     includeRootFolder: true
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/website.zip'
+    archiveFile: 'website.zip'
     replaceExistingArchive: true
+
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Build.ArtifactStagingDirectory)/website.zip'
+    targetPath: 'website.zip'
     artifactType: 'pipeline'
     artifactName: 'zip-file'
+
+
