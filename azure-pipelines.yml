@@ -20,15 +20,6 @@ steps:
 
 
 
-trigger:
-  branches:
-    include:
-    - master
-
-pool:
-  vmImage: "ubuntu-latest"
-
-steps:
 #- checkout: none
 - checkout: self
   persistCredentials: true
@@ -43,24 +34,16 @@ steps:
     echo $(Build.Repository.Name)
     echo $(Build.QueuedBy)
     echo $(Build.DefinitionName)
-- task: Maven@3
+- task: ArchiveFiles@2
   inputs:
-    mavenPomFile: '$(Build.SourceVersionMessage)/pom.xml'
-    mavenOptions: '-Xmx3072m'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
-    jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
-    goals: 'package'
+    rootFolderOrFile: '$(Build.BinariesDirectory)'
+    includeRootFolder: true
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/website.zip'
+    replaceExistingArchive: true
 
-- task: CmdLine@2
-  inputs:
-    script:
-      cd $(Pipeline.Workspace)/s/  | 
-      jar cf jar-file.jar $(Build.SourceVersionMessage)/src/main/java/com/uga/*
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: '$(Pipeline.Workspace)/s/jar-file.jar'
+    targetPath: '$(Build.ArtifactStagingDirectory)/website.zip'
     artifactType: 'pipeline'
-    artifactName: 'jar-file'
+    artifactName: 'zip-file'
