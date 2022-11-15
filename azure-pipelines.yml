@@ -34,8 +34,8 @@ steps:
 
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Pipeline.Workspace)/s.'
-    includeRootFolder: true
+    rootFolderOrFile: '$(Pipeline.Workspace)/s'
+    includeRootFolder: false
     archiveType: 'zip'
     archiveFile: 'website.zip'
     replaceExistingArchive: true
