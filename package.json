@@ -1,0 +1,22 @@
+{
+  "name": "kunti-personal-website",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kns1-30/Kunti-Personal-Website.git"
+  },
+  "author": "Kunti Sandanshi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kns1-30/Kunti-Personal-Website/issues"
+  },
+  "homepage": "https://github.com/kns1-30/Kunti-Personal-Website#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
