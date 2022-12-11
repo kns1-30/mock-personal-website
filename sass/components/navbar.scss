@@ -1,0 +1,34 @@
+/* navbar */
+
+.navbar-nav {
+  margin-right: 10%;
+  margin-left: auto;
+}
+
+.navbar-light {
+  /* background-color: #D3CEDF; */
+  background-color: $color-primary-background;
+  font-family: "Merriweather", serif;
+  /* background-color: #F5EFE6; */
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $color-h1-car-nav;
+}
+
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+  /* background: $color-gradient-light; */
+  background: #aebdca;
+  background-image: -webkit-linear-gradient(top, #aebdca, $color-gradient-light);
+  background-image: -moz-linear-gradient(top, #aebdca, $color-gradient-light);
+  background-image: -ms-linear-gradient(top, #aebdca, $color-gradient-light);
+  background-image: -o-linear-gradient(top, #aebdca, $color-gradient-light);
+  background-image: linear-gradient(to bottom, #aebdca, $color-gradient-light);
+  border-radius: 10%;
+  color: white;
+}
+
+.navbar-brand{
+  margin-top:10px;
+width:15%;
+height: 100%;
+}

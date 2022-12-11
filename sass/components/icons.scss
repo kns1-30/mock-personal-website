@@ -1,0 +1,21 @@
+/* icons skills */
+
+.square-icon{
+  margin: 0 0.75rem;
+}
+.icon {
+  color: $color-sub-main;
+  margin: 1rem;
+}
+
+.icon:hover {
+  color: $color-sub-hover;
+}
+.icon-footer{
+  color: $color-sub-hover;
+  margin: 1rem;
+}
+
+.icon-footer:hover{
+  color: $color-sub-main;
+}

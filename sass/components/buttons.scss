@@ -1,0 +1,66 @@
+/* buttons */
+
+.btn-view-all{
+  margin:2%;
+  float:right;
+}
+
+.btn-download {
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  background: $color-sub-hover;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin:10% auto 0 ;
+  width:60%;
+
+}
+
+.btn-download:hover {
+  background: $color-sub-main;
+  text-decoration: none;
+  color: white;
+}
+
+
+.btn-read-more{
+
+  color: $color-sub-main;
+  /* color: $color-sub-hover; */
+  text-decoration: underline;
+  border: none;
+  text-align: center;
+  /* width:50%; */
+  font-size: 20px;
+  background-color: white;
+}
+
+/* .btn-download{
+  background: $color-sub-hover;
+  background-image: -webkit-linear-gradient(top,$color-sub-hover , $color-gradient-light);
+  background-image: -moz-linear-gradient(top, $color-sub-hover, $color-gradient-light);
+  background-image: -ms-linear-gradient(top, $color-sub-hover, $color-gradient-light);
+  background-image: -o-linear-gradient(top, $color-sub-hover, $color-gradient-light);
+  background-image: linear-gradient(to bottom, $color-sub-hover, $color-gradient-light);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+  margin-top:10%;
+} */
+
+
+/* .btn-download:hover {
+  background: $color-primary-dark;
+  text-decoration: none;
+  color: white;
+} */

@@ -1,0 +1,30 @@
+.footer{
+  &-link {
+  color: $color-text-body;
+  /* margin: 10px 20px; */
+  margin: 5% ;
+  /* padding-right: 40px; */
+}
+
+&-link:hover{
+  color:$color-sub-main;
+  text-decoration: none;
+}
+
+&-list-points:hover{
+  text-decoration: none;
+
+}
+
+&-list{
+  list-style: none;
+  text-align: left;
+  margin-top:10% ;
+}
+
+&-list-points{
+  text-decoration: underline;
+  /* padding:5% 3%; */
+  margin: 20% 0;
+}
+}
