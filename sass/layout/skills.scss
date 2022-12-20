@@ -1,0 +1,25 @@
+.skill-image{
+  //height:20rem;
+   width:30rem;
+}
+
+.skill-image-box{
+   max-width:30rem;
+  // width:40rem;
+  height: 25rem;
+
+  background-image: linear-gradient(
+    to left bottom,
+    rgba( $color-gradient-light,0.75),
+    rgba( $color-gradient-light,0.5)
+  ),
+  url(../../images/neverstoplearning1.png);
+  background-size: cover;
+  margin:0 auto;
+}
+
+.heading-skill{
+ padding: 10rem 0;
+ text-align:left;
+ font-size: 7rem;
+}

@@ -1,0 +1,11 @@
+.skill-image-box {
+  width: 50%;
+  background-image: linear-gradient(to left bottom, black, black), url(../../images/neverstoplearning1.png);
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.heading-skill {
+  padding: 20rem 10rem;
+  text-align: center;
+}/*# sourceMappingURL=skills.css.map */
